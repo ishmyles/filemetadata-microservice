@@ -1,8 +1,8 @@
-var express = require('express');
-var cors = require('cors');
+let express = require('express');
+let cors = require('cors');
 require('dotenv').config()
 
-var app = express();
+let app = express();
 
 app.use(cors());
 app.use('/public', express.static(process.cwd() + '/public'));
